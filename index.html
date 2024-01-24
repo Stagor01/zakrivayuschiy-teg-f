@@ -16,7 +16,9 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header card">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <h2 class="header__subtitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -43,7 +45,28 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="content card">
+        <h3 class="content__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h3>
+        <picture>
+          <img
+            class="content__img"
+            src="./images/preparation.jpg"
+            alt="Люди начинают строить лестницу вверх"
+          />
+        </picture>
+        <div class="content__text">
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p>Место для ваших воспоминаний о начале обучения.</p>
+        </div>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
