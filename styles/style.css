@@ -87,6 +87,24 @@
   font-variation-settings: "wght" 700;
 }
 
+.content__img-wrapper {
+  position: relative;
+}
+
+.content__img-label {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px var(--background-color);
+  color: var(--text-color);
+  inset-inline-end: 13px;
+  inset-block-start: 24px;
+  mix-blend-mode: hard-light;
+}
+
 .content__img {
   display: block;
   object-fit: cover;
