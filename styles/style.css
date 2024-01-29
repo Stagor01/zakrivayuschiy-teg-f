@@ -87,7 +87,7 @@
   width: 100%;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-  outline: 1px solid #000;
+  outline: 1px solid var(--text-color);
   transform-origin: left;
 }
 
@@ -124,6 +124,7 @@
 
 .content__title {
   font-variation-settings: "wght" 700;
+  padding: 8px 10px;
 }
 
 .content__img-wrapper {
@@ -155,7 +156,78 @@
 .content__text {
   display: grid;
   gap: 27px;
-  border: 2px solid #000;
   line-height: 21px;
   padding: 25px 30px 0 25px;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  padding: 25px;
+}
+
+.card__icon-button {
+  display: grid;
+  border: 2px solid transparent;
+  padding: 0;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color);
+}
+
+.button {
+  position: relative;
+  border: 2px solid var(--text-color);
+  padding: 10px 34px;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-transform: inherit;
+  appearance: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  background: var(--background-color);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--text-color);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: var(--text-color);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
+}
+
+.button__text{
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+}
+
+.like-icon {
+  block-size: 34px;
+  inline-size: 34px;
 }
