@@ -235,3 +235,60 @@
   block-size: 34px;
   inline-size: 34px;
 }
+
+.button__memory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 20px;
+}
+
+.button__icon {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
+  block-size: 21px;
+  inline-size: 21px;
+}
+
+.dialog {
+  color: var(--text-color);
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  border: 2px solid var(--text-color);
+  padding: 30px;
+  max-inline-size: 355px;
+  background-color: var(--background-color);
+}
+
+.dialog[open] {
+  display: grid;
+  gap: 30px;
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__button {
+  inline-size: 100%;
+}
+
+.dialog::backdrop {
+  opacity: 0.75;
+  background: #000;
+}
