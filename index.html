@@ -518,7 +518,31 @@
           </button>
         </footer>
       </section>
+      <button
+        type="button"
+        onclick="window.modal.showModal();"
+        aria-controls="dialog-id"
+        class="button button__memory"
+      >
+        <svg class="icon__button" viewBox="0 0 29 28">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
+    <dialog id="dialog-id" class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" viewBox="0 0 29 28">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p>Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <form method="dialog">
+        <button type="submit" class="button dialog__button">
+          <span class="button__text">ок</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
