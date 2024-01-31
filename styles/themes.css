@@ -7,6 +7,7 @@
 
 :root.theme-light {
     --main-font-weight: 400;
+    --content__title-font-weight: 700;
     --text-color: #000;
     --button-text-color: #fff;
     --like-icon-contour-color: #000;
@@ -19,6 +20,7 @@
 
 :root.theme-dark {
     --main-font-weight: 465;
+    --content__title-font-weight: 785;
     --text-color: #00CC14;
     --button-text-color: #00CC14;
     --like-icon-contour-color: #00CC14;

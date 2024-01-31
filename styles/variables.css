@@ -2,7 +2,8 @@
 :root {
     --main-font-family: "Inter", sans-serif;
     --main-font-weight: 400;
-    --accent-font-family: "PressStart2P";
+    --content__title-font-weight: 700;
+    --accent-font-family: "PressStart2P", fantasy;
     --text-color: #000;
     --button-text-color: #fff;
     --like-icon-contour-color: #000;

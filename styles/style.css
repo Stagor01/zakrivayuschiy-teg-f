@@ -34,14 +34,15 @@
   margin-block-end: 100px;
 }
 
-.header__title {
+.header__logo {
+  text-decoration: none;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   margin-block-end: 20px;
 }
 
-.header__subtitle {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -122,7 +123,7 @@
 }
 
 .content__title {
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" var(--content__title-font-weight);
   padding: 8px 10px;
   border-block-end: 2px solid var(--text-color);
 }
@@ -184,7 +185,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--text-color);
+  border: 2px solid var(--text-color);
 }
 
 .button {
@@ -318,7 +319,7 @@
 }
 
 .filter-blur {
-  filter: blur(15%);
+  filter: blur(0.15rem);
 }
 
 .filter-multiple {
