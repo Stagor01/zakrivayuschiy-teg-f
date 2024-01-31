@@ -293,6 +293,40 @@
   background: #000;
 }
 
+.filter-brightness {
+  filter: brightness(80%);
+}
+
+.filter-sepia {
+  filter: sepia(10%);
+}
+
+.filter-invert {
+  filter: invert(5%);
+}
+
+.filter-opacity {
+  filter: opacity(10%);
+}
+
+.filter-saturate {
+  filter: saturate(110%);
+}
+
+.filter-grayscale {
+  filter: grayscale(50%);
+}
+
+.filter-blur {
+  filter: blur(15%);
+}
+
+.filter-multiple {
+  filter: brightness(110%) contrast(120%) saturate(115%);
+}
+
+
+
 @media (width <= 375px) {
   .dialog {
     padding: 30px 40px;
