@@ -53,7 +53,8 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 14px;
+  gap: 10px;
+  padding-inline-start: 20px
 }
 
 .theme-menu__button {
@@ -123,6 +124,7 @@
 }
 
 .content__title {
+  font-size: 18px;
   font-variation-settings: "wght" var(--content__title-font-weight);
   padding: 8px 10px;
   border-block-end: 2px solid var(--text-color);
