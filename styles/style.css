@@ -292,3 +292,19 @@
   opacity: 0.75;
   background: #000;
 }
+
+@media (width <= 375px) {
+  .dialog {
+    padding: 30px 40px;
+    max-inline-size: 340px;
+  }
+
+  .button__memory {
+    flex-direction: column;
+  }
+
+  .button__icon {
+    block-size: 28px;
+    inline-size: 28px;
+  }
+}
