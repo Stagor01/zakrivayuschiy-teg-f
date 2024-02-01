@@ -190,6 +190,12 @@
   border: 2px solid var(--text-color);
 }
 
+.card__like-button {
+  display: flex;
+  justify-content: center;
+  inline-size: 130px;
+}
+
 .button {
   position: relative;
   border: 2px solid var(--text-color);
